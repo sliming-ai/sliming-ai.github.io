@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Project page of SLIMMING">
+  <meta property="og:title" content="Singular values-driven automated filter pruning" />
+  <meta property="og:description" content="Project page of the paper Singular values-driven automated filter pruning" />
+  <meta property="og:url" content="https://pvtien96.github.io/SLIMMING/" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/banner.png" />
+  <meta property="og:image:width" content="128" />
+  <meta property="og:image:height" content="120" />
+
+
+  <meta name="twitter:title" content="Project page of SLIMMING">
+  <meta name="twitter:description"
+    content="Project page of the Neural Networks paper Singular values-driven automated filter pruning">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/banner.png">
+  <meta name="twitter:card" content="static/images/overview.png">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="SLIMMING">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Singular values-driven automated filter pruning</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇫🇷</text></svg>">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- MathJax configuration -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Add CSS for background -->
+  <style>
+    body {
+      background-size: cover;
+      /* Adjust the size of the background image */
+      background-position: center;
+      /* Center the background image */
+      background-repeat: no-repeat;
+      /* Prevent background image from repeating */
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    // Function to generate a random background color
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    // Function to set random background color
+    function setRandomBackgroundColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+
+    // Call the function to set random background color when the page loads
+    window.onload = setRandomBackgroundColor;
+  </script>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"
+              style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Singular values-driven automated
+              filter pruning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/pvtien96" target="_blank">Van Tien Pham</a>,</span>
+              <span class="author-block">
+                <a href="https://yzniyed.blogspot.com/p/about-me.html" target="_blank">Yassine Zniyed</a>,</span>
+              <span class="author-block">
+                <a href="http://tpnguyen.univ-tln.fr/" target="_blank">Thanh Phuong Nguyen</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://www.lis-lab.fr/" target="_blank" style="font-style: italic;">
+                  Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France
+                </a>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://pvtien96.github.io/SLIMMING/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/pvtien96/SLIMMING" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Hugging Face link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/pvtien96/SLIMMING" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span>🤗 Models</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              This paper introduces a novel automated filter pruning approach through singular values-driven
+              optimization. Based on the observation and analysis of the distribution of singular values of the
+              overparameterized model, we establish a robust connection between weight redundancy and these values,
+              rendering them potent indicators for automated pruning. The automated structured pruning is formulated as
+              a constrained combinatorial optimization problem spanning all layers, aiming to maximize the nuclear norm
+              of the compact model. This problem is decomposed into two sub-problems: determining the pruning
+              configuration and assessing the filter importance within a layer based on the identified pruning ratio. We
+              introduce two straightforward algorithms to address these sub-problems, effectively handling the global
+              relationship between layers and the inter-filter correlation within each layer. Thorough experiments
+              across 8 architectures, 4 benchmark datasets, and 4 vision tasks underscore the efficacy of our framework.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <!-- Image carousel -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title">🎮 Toy example</h2>
+      <div class="content has-text-justified">
+        <p>
+          This paper proposes a method that leverages tools from linear and multilinear algebra to provide a new
+          solution for automated filter pruning.
+          We propose to detect network redundancy hinging on the dynamics of singular values and the use of the
+          nuclear norm.
+          We illuminate the intricate relationship between filter redundancy within neural networks and the observable
+          variations in their singular values.
+          To illustrate the rationale of our proposed approaches, we create a synthetic dataset, dubbed as SVGG, which
+          includes an original model that mimics the architecture of the VGG network with \(L=5\), \(d_l= 3\) and
+          \(\{C_l\}_{l=1}^L = \{64, 128, 256, 512, 512\}\).
+          We choose the redundant rates (the ratio of the number of redundant filters to the total number of filters,
+          <em>i.e.</em>, \(\frac{C_l-N_l}{C_l}\)) of these layers sequentially as \(\{0.25, 0.3, 0.35, 0.4, 0.45\}\),
+          thus \(\{N_l\}_{l=1}^L = \{48, 90, 166, 307, 282\}\), and the number of retained filters \(N=893\).
+          In the \(l\)-th layer, we init \(N_l\) core filters with the standard normal distribution while the
+          remaining redundant filters are copied from the core filters with a small noise of variance \(\epsilon =
+          0.01\).
+          The "multilinear" singular values are visualized as follows.
+          One should note that the overparameterized model contains many near-zero singular values, indicating
+          redundancy.
+          The random search approach, CHIP, FPC, and SPSRC yield suboptimal results, whereas GEM successfully
+          identifies all unique filters, achieving 100% accuracy comparable to the complete search, with reduced
+          computational overhead.
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 720px; margin: 0 auto;">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/MSV_original.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            Singular values of the original model.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/RS.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            Random search.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/CHIP.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            <a href="https://arxiv.org/abs/2110.13981">CHIP</a>.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/FPC.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705121010492">FPC</a>.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/SPSRC.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            <a
+              href="https://openaccess.thecvf.com/content/WACV2024/html/Sun_Towards_Better_Structured_Pruning_Saliency_by_Reorganizing_Convolution_WACV_2024_paper.html">SPSRC</a>.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/GEM.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            <b>GEM (Ours).</b>
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/Groundtruth.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            Groundtruth or Complete Search.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/Non-redundant.png" alt="MY ALT TEXT" style="max-width: 100%;" />
+          <h2 class="subtitle has-text-centered">
+            Non-redundant selected filters with SVGG.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+  <section class="section" id="downstream">
+    <div class="container is-max-desktop">
+      <h2 class="title">🚀 Throughput acceleration</h2>
+      <div class="content has-text-justified">
+        <p>
+          To emphasize the practical benefits of SLIMMING, we meticulously conducted an experiment comparing a baseline
+          model with a compressed model, both designed for object detection tasks. Using the FasterRCNN_ResNet50_FPN
+          architecture on an RTX 3060 GPU, the experiment robustly demonstrates the significant performance improvement
+          achieved by SLIMMING. Accompanying GIFs provide a clear visual representation: the baseline model achieves an
+          inference speed of approximately 9 FPS, while the SLIMMING-compressed model achieves a remarkable twofold
+          increase in throughput. This substantial difference effectively demonstrates SLIMMING's effectiveness and
+          scalability, firmly establishing its relevance and usefulness across various deployment scenarios.
+        </p>
+      </div>
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+        <tbody>
+          <tr>
+            <td><img src="static/videos/faster-baseline.gif" alt=""></td>
+            <td><img src="static/videos/faster-pruned.gif" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="static/videos/mask-baseline.gif" alt=""></td>
+            <td><img src="static/videos/mask-pruned.gif" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="static/videos/keypoint-baseline.gif" alt=""></td>
+            <td><img src="static/videos/keypoint-pruned.gif" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="has-text-centered">
+        <p>Baseline (<em>left</em>) vs Pruned (<em>right</em>) model inference.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="gradcam">
+    <div class="container is-max-desktop">
+      <h2 class="title">🌈 Visualizing feature preservation</h2>
+      <div class="content has-text-justified">
+        <p>
+          We present a qualitative evaluation of feature preservation, complementing the established efficiency
+          demonstrated through numerical results.
+          Our analysis involves a random selection of 5 images from the ImageNet validation dataset, examining three
+          compression levels applied to the original ResNet-50 model: 44%, 63%, and 79%.
+          Utilizing GradCAM for interpretation, we visually assess and analyze feature maps in both the original and
+          compressed models.
+          The visual representation underscores our framework's efficacy in retaining crucial features across a diverse
+          range of classes.
+          Noteworthy is its consistent robustness in capturing and preserving essential information at different CRs.
+          This resilience implies sustained effectiveness and reliability across varying scenarios and compression
+          levels, positioning our framework as a versatile choice for network compression across diverse applications
+          and datasets.
+        </p>
+      </div>
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th class="has-text-centered">Input</th>
+            <th class="has-text-centered">CR=0%</th>
+            <th class="has-text-centered">CR=44%</th>
+            <th class="has-text-centered">CR=63%</th>
+            <th class="has-text-centered">CR=79%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="static/images/cam/ILSVRC2012_val_00003498.JPEG" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00003498_[0.]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00003498_[0.255]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00003498_[0.4]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00003498_[0.55]*20.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="static/images/cam/ILSVRC2012_val_00009497.JPEG" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00009497_[0.]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00009497_[0.255]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00009497_[0.4]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00009497_[0.55]*20.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="static/images/cam/ILSVRC2012_val_00018573.JPEG" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00018573_[0.]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00018573_[0.255]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00018573_[0.4]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00018573_[0.55]*20.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="static/images/cam/ILSVRC2012_val_00044350.JPEG" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00044350_[0.]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00044350_[0.255]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00044350_[0.4]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00044350_[0.55]*20.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="static/images/cam/ILSVRC2012_val_00049750.JPEG" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00049750_[0.]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00049750_[0.255]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00049750_[0.4]*20.jpg" alt=""></td>
+            <td><img src="static/images/cam/ILSVRC2012_val_00049750_[0.55]*20.jpg" alt=""></td>
+          </tr>
+          <!-- Add other rows similarly -->
+        </tbody>
+      </table>
+      <div class="has-text-centered">
+        <p>Qualitative assessment of feature preservation in compressed models.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">🔖 Citation</h2>
+      <p>If the code and paper help your research, please kindly cite:</p>
+      <pre><code id="citation">
+        @misc{pham2024singular,
+          title={Singular values-driven automated filter pruning}, 
+          author={Pham, Van Tien and Zniyed, Yassine and Nguyen, Thanh Phuong},
+          howpublished={\url{https://pvtien96.github.io/SLIMMING/}},
+          year={2024}
+        }
+      </code></pre>
+      <button onclick="copyCitation()">Copy</button>
+    </div>
+  </section>
+
+  <script>
+    function copyCitation() {
+      const codeElement = document.getElementById('citation');
+      const range = document.createRange();
+      range.selectNode(codeElement);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand('copy');
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+  <!--End BibTex citation -->
+
+
+  <!--Acknowledgements-->
+  <section class="section" id="acknowledgements">
+    <div class="container is-max-desktop content">
+      <h2 class="title">👍 Acknowledgements</h2>
+      <p>
+        This work was granted access to the <a
+          href="http://www.idris.fr/eng/jean-zay/jean-zay-presentation-eng.html">HPC resources of IDRIS</a> under the
+        allocation 2023-103147 made by <a href="https://genci.fr/">GENCI</a>. The
+        work of T.P. Nguyen is partially supported by <a href="https://anr.fr/Projet-ANR-21-ASRO-0003">ANR ASTRID
+          ROV-Chasseur</a>.
+      </p>
+    </div>
+  </section>
+  <!--End Acknowledgements-->
+
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>

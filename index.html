@@ -8,7 +8,7 @@
   <meta name="description" content="Project page of SLIMMING">
   <meta property="og:title" content="Singular values-driven automated filter pruning" />
   <meta property="og:description" content="Project page of the paper Singular values-driven automated filter pruning" />
-  <meta property="og:url" content="https://pvtien96.github.io/SLIMMING/" />
+  <meta property="og:url" content="https://github.com/sliming-ai/sliming-ai.github.io" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/images/banner.png" />
   <meta property="og:image:width" content="128" />
@@ -95,18 +95,23 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://github.com/pvtien96" target="_blank">Van Tien Pham</a>,</span>
+                <a href="https://github.com/pvti" target="_blank">Van Tien Pham</a>,</span>
               <span class="author-block">
                 <a href="https://yzniyed.blogspot.com/p/about-me.html" target="_blank">Yassine Zniyed</a>,</span>
               <span class="author-block">
-                <a href="http://tpnguyen.univ-tln.fr/" target="_blank">Thanh Phuong Nguyen</a>
+                <a href="https://webusers.i3s.unice.fr/~tpnguyen/" target="_blank">Thanh Phuong Nguyen</a>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://www.lis-lab.fr/" target="_blank" style="font-style: italic;">
-                  Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France
+                  Universite de Toulon, Aix Marseille University, CNRS, LIS, UMR 7020, France
+                </a>
+              </span>
+              <span class="author-block">
+                <a href="https://www.i3s.unice.fr/en/" target="_blank" style="font-style: italic;">
+                  University of Cote d’Azur, CNRS, I3S, UMR 7271, France
                 </a>
               </span>
             </div>
@@ -115,7 +120,7 @@
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
                 <span class="link-block">
-                  <a href="https://pvtien96.github.io/SLIMMING/" target="_blank"
+                  <a href="https://github.com/sliming-ai/sliming-ai.github.io" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -126,7 +131,7 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/pvtien96/SLIMMING" target="_blank"
+                  <a href="https://github.com/sliming-ai/sliming-ai.github.io" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -159,16 +164,19 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              This paper introduces a novel automated filter pruning approach through singular values-driven
-              optimization. Based on the observation and analysis of the distribution of singular values of the
-              overparameterized model, we establish a robust connection between weight redundancy and these values,
-              rendering them potent indicators for automated pruning. The automated structured pruning is formulated as
-              a constrained combinatorial optimization problem spanning all layers, aiming to maximize the nuclear norm
-              of the compact model. This problem is decomposed into two sub-problems: determining the pruning
-              configuration and assessing the filter importance within a layer based on the identified pruning ratio. We
-              introduce two straightforward algorithms to address these sub-problems, effectively handling the global
-              relationship between layers and the inter-filter correlation within each layer. Thorough experiments
-              across 8 architectures, 4 benchmark datasets, and 4 vision tasks underscore the efficacy of our framework.
+              In this paper, we present SLIMING (Singular vaLues-drIven autoMated filter
+              prunING), an automated filter pruning method that uses singular values to formalize
+              the pruning process as an optimization problem over filter tensors. Recognizing that
+              this original formulation poses a combinatorial challenge, we propose to replace it
+              with a two-step process that consistently uses singular values in each phase: \(i\)
+              determining the pruning configuration, which specifies the number of filters to retain
+              in each layer, and \(ii\) selecting the filters themselves. We show that this approach
+              ensures the preservation of the filters' multidimensional structure throughout the
+              pruning process. For each of these steps, we propose a straightforward algorithm to
+              solve them. To validate each part of our approach, we performed a numerical
+              simulation on an overparameterized synthetic toy example. Additionally, we
+              conducted extensive simulations across eight architectures, four benchmark
+              datasets, and four vision tasks, validating the efficacy of our framework.
             </p>
           </div>
         </div>
@@ -392,7 +400,7 @@
         @misc{pham2024singular,
           title={Singular values-driven automated filter pruning}, 
           author={Pham, Van Tien and Zniyed, Yassine and Nguyen, Thanh Phuong},
-          howpublished={\url{https://pvtien96.github.io/SLIMMING/}},
+          howpublished={\url{https://github.com/sliming-ai/sliming-ai.github.io}},
           year={2024}
         }
       </code></pre>

@@ -8,13 +8,14 @@
     </h1>
 <div>
 <div align="center">
-    <a href='https://github.com/pvtien96' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
+    <a href='https://github.com/pvti' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
     <a href='https://yzniyed.blogspot.com/p/about-me.html' target='_blank'>Yassine ZNIYED<sup>1</sup></a>&emsp;
-    <a href='http://tpnguyen.univ-tln.fr/' target='_blank'>Thanh Phuong NGUYEN<sup>1</sup></a>&emsp;
+    <a href='https://webusers.i3s.unice.fr/~tpnguyen/' target='_blank'>Thanh Phuong NGUYEN<sup>2</sup></a>&emsp;
 </div>
 
 <div align="center">
-    <sup>1</sup>Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France&emsp;
+    <sup>1</sup>Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France<br>
+    <sup>2</sup>University of Côte d'Azur, CNRS, I3S, UMR 7271, France<br>
     <sup>&#x2709</sup> Corresponding Author
 </div>
 
@@ -33,7 +34,7 @@ across 8 architectures, 4 benchmark datasets, and 4 vision tasks underscore the 
 
 
 # 🌟 News
-* **17.04.2024:** [Baseline and checkpoints are released](https://huggingface.co/pvtien96/SLIMMING) 🤗.
+* **1.11.024:** [Baseline and checkpoints are released](https://huggingface.co/pvtien96/SLIMMING) 🤗.
 
 
 # 🕙 ToDo
@@ -47,7 +48,7 @@ If the code and paper help your research, please kindly cite:
 @misc{pham2024singular,
     title={Singular values-driven automated filter pruning}, 
     author={Pham, Van Tien and Zniyed, Yassine and Nguyen, Thanh Phuong},
-    howpublished={\url{https://pvtien96.github.io/SLIMMING/}},
+    howpublished={\url{https://github.com/sliming-ai/sliming-ai.github.i}},
     year={2024}
     }
 ```

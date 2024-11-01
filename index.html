@@ -64,25 +64,29 @@
 
 <body>
   <script>
-    // Function to generate a random background color
-    function getRandomColor() {
-      var letters = '0123456789ABCDEF';
-      var color = '#';
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
+    // Array of colors resembling book paper
+    var bookPaperColors = [
+      '#f5f5dc', // Light Beige
+      '#fffff0', // Ivory
+      '#fdf5e6', // Old Lace
+      '#ffefd5', // Papaya Whip
+      '#faebd7'  // Linen
+    ];
+
+    // Function to get a random color from the array
+    function getRandomBookPaperColor() {
+      var randomIndex = Math.floor(Math.random() * bookPaperColors.length);
+      return bookPaperColors[randomIndex];
     }
 
     // Function to set random background color
     function setRandomBackgroundColor() {
-      document.body.style.backgroundColor = getRandomColor();
+      document.body.style.backgroundColor = getRandomBookPaperColor();
     }
 
-    // Call the function to set random background color when the page loads
+    // Call the function to set the background color when the page loads
     window.onload = setRandomBackgroundColor;
   </script>
-
 
   <section class="hero">
     <div class="hero-body">

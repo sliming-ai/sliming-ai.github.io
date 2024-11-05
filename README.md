@@ -34,11 +34,12 @@ across 8 architectures, 4 benchmark datasets, and 4 vision tasks underscore the 
 
 
 # 🌟 News
+* **5.11.024:** [Notebook for the toy example is released](SVGG.ipynb). Get your 👋 dirty 💻!
 * **1.11.024:** [Baseline and checkpoints are released](https://huggingface.co/sliming/models) 🤗.
 
 
 # 🕙 ToDo
-- [ ] Write detailed documentation.
+- [x] Write detailed documentation.
 - [x] Upload compressed models.
 - [ ] Clean code.
 

@@ -34,7 +34,7 @@ across 8 architectures, 4 benchmark datasets, and 4 vision tasks underscore the 
 
 
 # 🌟 News
-* **1.11.024:** [Baseline and checkpoints are released](https://huggingface.co/pvtien96/SLIMMING) 🤗.
+* **1.11.024:** [Baseline and checkpoints are released](https://huggingface.co/sliming/models) 🤗.
 
 
 # 🕙 ToDo

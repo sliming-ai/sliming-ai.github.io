@@ -48,7 +48,7 @@ If the code and paper help your research, please kindly cite:
 @misc{pham2024singular,
     title={Singular values-driven automated filter pruning}, 
     author={Pham, Van Tien and Zniyed, Yassine and Nguyen, Thanh Phuong},
-    howpublished={\url{https://github.com/sliming-ai/sliming-ai.github.i}},
+    howpublished={\url{https://sliming-ai.github.io/}},
     year={2024}
     }
 ```

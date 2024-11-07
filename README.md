@@ -1,15 +1,35 @@
-![Days since submission](https://img.shields.io/badge/Days_since_submission-8-0a7b41?style=flat-square)
+<div>
+  <img class="image" src="static/images/singularity/PPTMooresLawai.png" width="40%" height="100%">
+  <img class="image" src="static/images/singularity/Moore&apos;s_Law_over_120_Years.png" width="58%" height="100%">
+</div>
+
+<div>
+  <img class="image" src="static/images/singularity/PPTExponentialGrowthof_Computing.jpg" width="46%" height="100%">
+  <img class="image" src="static/images/singularity/Countdown_to_Singularity_-_Linear.svg" width="52.4%" height="100%">
+</div>
+
+> "**The Singularity Is Nearer: When We Merge with AI.**" — *Ray Kurzweil, 2024*
+
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fpvtien96%2FSLIMMING&labelColor=%2337d67a&countColor=%23697689)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Days since submission](https://img.shields.io/badge/Days_since_submission-8-0a7b41?style=flat-square)
 
 <div class="column centered">
     <h1 class="title is-1 publication-title"
         style="text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 32px;">
         🧠 Singular values-driven automated filter pruning
     </h1>
-    <blockquote style="font-size: 1.5em; font-weight: bold; text-align: center; margin-top: 10px;">
-        "The Singularity Is Nearer: When We Merge with AI." — <a href="https://www.thesingularityisnearer.com/" target="_blank" style="text-decoration: none; color: inherit;">Ray Kurzweil, 2024</a>
-    </blockquote>
+</div>
+<div align="center">
+    <a href='https://github.com/pvti' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
+    <a href='https://yzniyed.blogspot.com/p/about-me.html' target='_blank'>Yassine ZNIYED<sup>1</sup></a>&emsp;
+    <a href='https://webusers.i3s.unice.fr/~tpnguyen/' target='_blank'>Thanh Phuong NGUYEN<sup>2</sup></a>&emsp;
+</div>
+
+<div align="center">
+    <sup>1</sup>Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France<br>
+    <sup>2</sup>University of Côte d'Azur, CNRS, I3S, UMR 7271, France<br>
+    <sup>&#x2709</sup> Corresponding Author
 </div>
 
 
@@ -99,17 +119,7 @@ The visual representation underscores SLIMING's efficacy in retaining crucial fe
 
 
 # 👪 Équipe
-<div align="center">
-    <a href='https://github.com/pvti' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
-    <a href='https://yzniyed.blogspot.com/p/about-me.html' target='_blank'>Yassine ZNIYED<sup>1</sup></a>&emsp;
-    <a href='https://webusers.i3s.unice.fr/~tpnguyen/' target='_blank'>Thanh Phuong NGUYEN<sup>2</sup></a>&emsp;
-</div>
 
-<div align="center">
-    <sup>1</sup>Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France<br>
-    <sup>2</sup>University of Côte d'Azur, CNRS, I3S, UMR 7271, France<br>
-    <sup>&#x2709</sup> Corresponding Author
-</div>
 
 # 🔖 Citation
 If the code and paper help your research, please kindly cite:

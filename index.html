@@ -154,7 +154,7 @@
 
                 <!-- Days since submission badge -->
                 <span class="link-block">
-                  <span id="days-since-submission" class="external-link button is-normal is-rounded is-dark">
+                  <span id="days-since-submission" class="button is-normal is-rounded">
                     <span class="icon">
                       <i class="fas fa-calendar-alt"></i>
                     </span>
@@ -173,14 +173,14 @@
   <!-- JavaScript to calculate days since submission -->
   <script>
     // Set the submission date
-    const submissionDate = new Date('2024-10-31');
+    const submissionDate = new Date('2024-10-30');
 
     // Calculate the difference in days
     function updateDaysSinceSubmission() {
       const currentDate = new Date();
       const timeDiff = currentDate - submissionDate;
       const daysSinceSubmission = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-      document.getElementById('days-count').textContent = daysSinceSubmission;
+      document.getElementById('days-count').textContent = daysSinceSubmission + ' ';
     }
 
     // Update the days on page load

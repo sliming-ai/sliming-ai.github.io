@@ -32,7 +32,6 @@ jobs:
         run: |
           python update.py
           git add README.md
-          git add progress.gif
           now=$(date)
           git commit -m "Update submission progress on $now"
           git push

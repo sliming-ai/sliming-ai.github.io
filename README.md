@@ -7,6 +7,7 @@
   <img class="image" src="static/images/singularity/PPTExponentialGrowthof_Computing.jpg" width="46%" height="100%">
   <img class="image" src="static/images/singularity/Countdown_to_Singularity_-_Linear.svg" width="53%" height="100%">
 </div>
+
 > "The Singularity Is Nearer: When We Merge with AI." — *Ray Kurzweil, 2024*
 
 ![Days since submission](https://img.shields.io/badge/Days_since_submission-8-0a7b41?style=flat-square)

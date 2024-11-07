@@ -12,18 +12,6 @@
     </blockquote>
 </div>
 
-<div align="center">
-    <a href='https://github.com/pvti' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
-    <a href='https://yzniyed.blogspot.com/p/about-me.html' target='_blank'>Yassine ZNIYED<sup>1</sup></a>&emsp;
-    <a href='https://webusers.i3s.unice.fr/~tpnguyen/' target='_blank'>Thanh Phuong NGUYEN<sup>2</sup></a>&emsp;
-</div>
-
-<div align="center">
-    <sup>1</sup>Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France<br>
-    <sup>2</sup>University of Côte d'Azur, CNRS, I3S, UMR 7271, France<br>
-    <sup>&#x2709</sup> Corresponding Author
-</div>
-
 
 # 🌀 Abstract
 This paper introduces a novel automated filter pruning approach through singular values-driven
@@ -108,6 +96,20 @@ The visual representation underscores SLIMING's efficacy in retaining crucial fe
 - [x] Write detailed documentation.
 - [x] Upload compressed models.
 - [ ] Clean code.
+
+
+# 👪 Équipe
+<div align="center">
+    <a href='https://github.com/pvti' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
+    <a href='https://yzniyed.blogspot.com/p/about-me.html' target='_blank'>Yassine ZNIYED<sup>1</sup></a>&emsp;
+    <a href='https://webusers.i3s.unice.fr/~tpnguyen/' target='_blank'>Thanh Phuong NGUYEN<sup>2</sup></a>&emsp;
+</div>
+
+<div align="center">
+    <sup>1</sup>Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France<br>
+    <sup>2</sup>University of Côte d'Azur, CNRS, I3S, UMR 7271, France<br>
+    <sup>&#x2709</sup> Corresponding Author
+</div>
 
 # 🔖 Citation
 If the code and paper help your research, please kindly cite:

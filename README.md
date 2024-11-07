@@ -8,7 +8,7 @@
         🧠 Singular values-driven automated filter pruning
     </h1>
     <blockquote style="font-size: 1.5em; font-weight: bold; text-align: center; margin-top: 10px;">
-        "The singularity is nearer." — <a href="https://www.thesingularityisnearer.com/" target="_blank" style="text-decoration: none; color: inherit;">Ray Kurzweil, 2024</a>
+        "The Singularity Is Nearer: When We Merge with AI." — <a href="https://www.thesingularityisnearer.com/" target="_blank" style="text-decoration: none; color: inherit;">Ray Kurzweil, 2024</a>
     </blockquote>
 </div>
 

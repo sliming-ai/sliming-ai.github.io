@@ -38,6 +38,68 @@ across 8 architectures, 4 benchmark datasets, and 4 vision tasks underscore the 
 * **1.11.024:** [Baseline and checkpoints are released](https://huggingface.co/sliming/models) 🤗. Get your 👋 dirty 💻!
 * **31.10.024:** The manuscript has been submitted to [Neural Networks](https://www.sciencedirect.com/journal/neural-networks).
 
+# :art: Supplementary materials
+## 1. Throughput acceleration <a name="throughput-acceleration"></a>
++ FasterRCNN for object detection
+<table style="width: 100%; border: none; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding: 10px; border: none;">
+      <img src="static/videos/faster-baseline.gif" alt="Baseline" style="width: 100%;">
+    </td>
+    <td style="width: 50%; padding: 10px; border: none;">
+      <img src="static/videos/faster-pruned.gif" alt="Pruned" style="width: 100%;">
+    </td>
+  </tr>
+</table>
+
++ MaskRCNN for instance segmentation
+<table style="width: 100%; border: none; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding: 10px; border: none;">
+      <img src="static/videos/mask-baseline.gif" alt="Baseline" style="width: 100%;">
+    </td>
+    <td style="width: 50%; padding: 10px; border: none;">
+      <img src="static/videos/mask-pruned.gif" alt="Pruned" style="width: 100%;">
+    </td>
+  </tr>
+</table>
+
++ KeypointRCNN for human keypoint detection
+<table style="width: 100%; border: none; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; padding: 10px; border: none;">
+      <img src="static/videos/keypoint-baseline.gif" alt="Baseline" style="width: 100%;">
+    </td>
+    <td style="width: 50%; padding: 10px; border: none;">
+      <img src="static/videos/keypoint-pruned.gif" alt="Pruned" style="width: 100%;">
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+    Baseline (<em>left</em>) vs Compressed (<em>right</em>) model inference.
+</div>
+
+To underscore the practical advantages of SLIMING, an experiment was meticulously conducted, involving a direct comparison between a baseline model and a compressed model, both tailored for object detection tasks. Leveraging the FasterRCNN_ResNet50_FPN architecture on a RTX 3060 GPU, the experiment robustly highlights the substantial performance enhancement achieved by SLIMING. The accompanying GIFs offer a vivid visual depiction: the baseline model showcases an inference speed of approximately 12 FPS, while the SLIMING-compressed model boasts a remarkable twofold acceleration in throughput. This notable disparity effectively showcases SLIMING's efficacy and scalability, firmly establishing its relevance and applicability across diverse deployment scenarios.
+
+*Note*: For replication of this experiment, please refer to [detection/README.md](detection/README.md).
+
+## 2. Visualizing feature preservation <a name="cam"></a>
+| Input | CR=0% | CR=50% | CR=64% | CR=78% |
+|:----------:|:----------:|:----------:|:----------:|:----------:|
+| ![](static/images/cam/ILSVRC2012_val_00003498.JPEG) | ![](static/images/cam/ILSVRC2012_val_00003498_[0.]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00003498_[0.255]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00003498_[0.4]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00003498_[0.55]*20.jpg) |
+| ![](static/images/cam/ILSVRC2012_val_00009497.JPEG) | ![](static/images/cam/ILSVRC2012_val_00009497_[0.]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00009497_[0.255]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00009497_[0.4]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00009497_[0.55]*20.jpg) |
+| ![](static/images/cam/ILSVRC2012_val_00049750.JPEG) | ![](static/images/cam/ILSVRC2012_val_00049750_[0.]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00049750_[0.255]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00049750_[0.4]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00049750_[0.55]*20.jpg) |
+| ![](static/images/cam/ILSVRC2012_val_00044350.JPEG) | ![](static/images/cam/ILSVRC2012_val_00044350_[0.]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00044350_[0.255]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00044350_[0.4]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00044350_[0.55]*20.jpg) |
+| ![](static/images/cam/ILSVRC2012_val_00018573.JPEG) | ![](static/images/cam/ILSVRC2012_val_00018573_[0.]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00018573_[0.255]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00018573_[0.4]*20.jpg) | ![](static/images/cam/ILSVRC2012_val_00018573_[0.55]*20.jpg) |
+
+<div align="center">
+    Qualitative assessment of feature preservation in compressed models.
+</div>
+We present a qualitative evaluation of feature preservation in SLIMING, complementing the established efficiency demonstrated through numerical results. Our analysis involves a random selection of 5 images from the ImageNet validation dataset, examining three compression levels applied to the original ResNet-50 model: 50%, 64%, and 78%. Utilizing GradCAM for interpretation, we visually assess and analyze feature maps in both the original and compressed models.
+
+The visual representation underscores SLIMING's efficacy in retaining crucial features across a diverse range of classes. Noteworthy is its consistent robustness in capturing and preserving essential information at different CRs. This resilience implies sustained effectiveness and reliability across varying scenarios and compression levels, positioning SLIMING as a versatile choice for network compression across diverse applications and datasets.
+
 # 🕙 ToDo
 - [x] Write detailed documentation.
 - [x] Upload compressed models.

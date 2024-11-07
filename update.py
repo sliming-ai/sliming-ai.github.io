@@ -7,6 +7,7 @@ plt.rcParams["font.family"] = "DejaVu Sans"
 
 # Constants
 SUBMISSION_START = datetime.datetime(2024, 10, 31)
+SUBMISSION_TO_ACCEPTANCE = 195  # average time for acceptance
 mouse_size = 0.0
 
 
@@ -20,10 +21,11 @@ def calculate_time_progress():
 
 def generate_progress_badge(time_spent):
     # Get color from the RdYlGn colormap
-    colors = plt.cm.RdYlGn(time_spent)
+    progress = time_spent / SUBMISSION_TO_ACCEPTANCE
+    colors = plt.cm.RdYlGn(1-progress)
 
     # Generate Markdown text for the badge
-    badge_text = f"![Progress](https://img.shields.io/badge/Progress-{time_spent}-{mcolors.to_hex(colors)[1:]}?style=flat-square)"
+    badge_text = f"![Days since submission](https://img.shields.io/badge/Days_since_submission-{time_spent}-{mcolors.to_hex(colors)[1:]}?style=flat-square)"
 
     return badge_text
 
@@ -36,7 +38,7 @@ def update_readme(time_spent):
         readme_lines = file.readlines()
 
     for i, line in enumerate(readme_lines):
-        if line.startswith("![Progress]"):
+        if line.startswith("![Days since submission]"):
             readme_lines[i] = f"{progress_badge}\n"
             break
 

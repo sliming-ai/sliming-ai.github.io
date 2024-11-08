@@ -29,9 +29,11 @@ jobs:
           git config --global user.name "sliming-ai"
 
       - name: Run Update Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python update.py
           git add README.md
           now=$(date)
           git commit -m "Update submission progress on $now"
-          git push
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/sliming-ai/sliming-ai.github.io.git HEAD:main

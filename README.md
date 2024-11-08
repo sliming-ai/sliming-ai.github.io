@@ -8,9 +8,9 @@
   <img class="image" src="static/images/singularity/Countdown_to_Singularity_-_Linear.svg" width="52.4%" height="100%">
 </div>
 
-> "The ever-**accelerating** progress of technology… gives the appearance of approaching some essential **singularity**." — *John von Neumann, 1958*
+> The ever-**accelerating** progress of technology… gives the appearance of approaching some essential **singularity**. — *John von Neumann, 1958*
 
-> "**The Singularity Is Nearer: When We Merge with AI.**" — *Ray Kurzweil, 2024*
+> **The Singularity Is Nearer: When We Merge with AI.** — *Ray Kurzweil, 2024*
 
 
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fpvtien96%2FSLIMMING&labelColor=%2337d67a&countColor=%23697689)

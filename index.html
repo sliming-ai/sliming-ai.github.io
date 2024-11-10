@@ -345,6 +345,304 @@
   <!-- End image carousel -->
 
 
+  <section class="section" id="results">
+    <div class="container is-max-desktop">
+      <h2 class="title">🚩 Main results</h2>
+      <p>
+        To showcase SLIMING's adaptability, we evaluate it on five architectures: VGG-16-BN, GoogLeNet with inception
+        modules, ResNet-20/32/56/110 with residual blocks, DenseNet-40 with dense blocks, and MobileNetV2 with inverted
+        residual blocks. These models are tested on the CIFAR-10/100 datasets. To further validate SLIMING's
+        scalability, we perform experiments on the ImageNet dataset using ResNet-50 and MobileNetV2 architectures.
+        Additionally, the compressed ResNet-50 model is used as the backbone for Faster R-CNN-FPN, Mask R-CNN, and
+        Keypoint R-CNN on the COCO-2017 dataset. While detailed results are available in the paper, we present ResNet-50
+        results on ImageNet in Table 1 for clarity. Our method consistently surpasses other approaches across all
+        compression levels in terms of performance and complexity reduction.
+      </p>
+
+      <table class="table is-striped is-fullwidth">
+        <caption>Table 1. Compression results of ResNet-50 on ImageNet</caption>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Auto</th>
+            <th>Top-1</th>
+            <th>Top-5</th>
+            <th>MACs (CR)</th>
+            <th>Params (CR)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><em>ResNet-50</em></td>
+            <td></td>
+            <td>76.15</td>
+            <td>92.87</td>
+            <td>4.12G (00)</td>
+            <td>25.56M (00)</td>
+          </tr>
+          <tr>
+            <td>C-SGD</td>
+            <td>&#10060;</td>
+            <td>75.94</td>
+            <td>92.88</td>
+            <td>2.62G (36)</td>
+            <td>17.09M (33)</td>
+          </tr>
+          <tr>
+            <td>REAF</td>
+            <td>&#9989;</td>
+            <td>75.17</td>
+            <td>92.44</td>
+            <td>2.16G (48)</td>
+            <td>14.57M (43)</td>
+          </tr>
+          <tr>
+            <td>RGP</td>
+            <td>&#10060;</td>
+            <td>75.30</td>
+            <td>92.55</td>
+            <td>2.30G (44)</td>
+            <td>14.34M (44)</td>
+          </tr>
+          <tr>
+            <td>Chen <em>et al.</em></td>
+            <td>&#10060;</td>
+            <td>75.60</td>
+            <td>92.58</td>
+            <td>2.21G (46)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>C-SGD</td>
+            <td>&#10060;</td>
+            <td>75.80</td>
+            <td>92.65</td>
+            <td>2.19G (47)</td>
+            <td>14.58M (43)</td>
+          </tr>
+          <tr>
+            <td>CHIP</td>
+            <td>&#10060;</td>
+            <td>76.15</td>
+            <td>92.91</td>
+            <td>2.10G (49)</td>
+            <td>14.23M (44)</td>
+          </tr>
+          <tr>
+            <td>SFI-FP</td>
+            <td>&#10060;</td>
+            <td>76.29</td>
+            <td>93.08</td>
+            <td>2.10G (49)</td>
+            <td>14.23M (44)</td>
+          </tr>
+          <tr>
+            <td>PEEL</td>
+            <td>&#10060;</td>
+            <td>76.50</td>
+            <td>N/A</td>
+            <td>2.20G (46)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><strong>SLIMING (Ours)</strong></td>
+            <td>&#9989;</td>
+            <td><strong>76.74</strong></td>
+            <td><strong>93.43</strong></td>
+            <td><strong>2.09G (49)</strong></td>
+            <td><strong>13.27M (48)</strong></td>
+          </tr>
+          <tr>
+            <td>CIE</td>
+            <td>&#9989;</td>
+            <td>74.06</td>
+            <td>91.87</td>
+            <td>1.56G (62)</td>
+            <td>9.98M (61)</td>
+          </tr>
+          <tr>
+            <td>RGP</td>
+            <td>&#10060;</td>
+            <td>74.58</td>
+            <td>92.09</td>
+            <td>1.92G (53)</td>
+            <td>11.99M (53)</td>
+          </tr>
+          <tr>
+            <td>MFP</td>
+            <td>&#10060;</td>
+            <td>74.86</td>
+            <td>92.43</td>
+            <td>1.88G (54)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>FPWT</td>
+            <td>&#10060;</td>
+            <td>75.01</td>
+            <td>92.45</td>
+            <td>1.89G (54)</td>
+            <td>12.86M (50)</td>
+          </tr>
+          <tr>
+            <td>Torque</td>
+            <td>&#10060;</td>
+            <td>75.07</td>
+            <td>N/A</td>
+            <td>1.99G (51)</td>
+            <td>9.68M (62)</td>
+          </tr>
+          <tr>
+            <td>OTOv2</td>
+            <td>&#9989;</td>
+            <td>75.20</td>
+            <td>92.22</td>
+            <td>1.53G (63)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>FiltDivNet</td>
+            <td>&#9989;</td>
+            <td>75.23</td>
+            <td>92.50</td>
+            <td>1.66G (59)</td>
+            <td>15.62M (39)</td>
+          </tr>
+          <tr>
+            <td>ASTER</td>
+            <td>&#9989;</td>
+            <td>75.27</td>
+            <td>92.47</td>
+            <td>1.51G (63)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>C-SGD</td>
+            <td>&#10060;</td>
+            <td>75.29</td>
+            <td>92.39</td>
+            <td>1.82G (55)</td>
+            <td>12.37M (52)</td>
+          </tr>
+          <tr>
+            <td>Hu <em>et al.</em></td>
+            <td>&#10060;</td>
+            <td>75.30</td>
+            <td>92.40</td>
+            <td>1.81G (56)</td>
+            <td>17.86M (30)</td>
+          </tr>
+          <tr>
+            <td>DCFF</td>
+            <td>&#10060;</td>
+            <td>75.60</td>
+            <td>92.55</td>
+            <td>1.52G (63)</td>
+            <td>11.05M (57)</td>
+          </tr>
+          <tr>
+            <td>HTP-URC</td>
+            <td>&#9989;</td>
+            <td>75.81</td>
+            <td>N/A</td>
+            <td>1.88G (54)</td>
+            <td>15.81M (38)</td>
+          </tr>
+          <tr>
+            <td><strong>SLIMING (Ours)</strong></td>
+            <td>&#9989;</td>
+            <td><strong>75.96</strong></td>
+            <td><strong>93.29</strong></td>
+            <td><strong>1.51G (63)</strong></td>
+            <td><strong>9.68M (62)</strong></td>
+          </tr>
+          <tr>
+            <td>HBFP</td>
+            <td>&#10060;</td>
+            <td>69.17</td>
+            <td>N/A</td>
+            <td>0.94G (76)</td>
+            <td>8.09M (68)</td>
+          </tr>
+          <tr>
+            <td>CHIP</td>
+            <td>&#10060;</td>
+            <td>72.30</td>
+            <td>90.74</td>
+            <td>0.95G (77)</td>
+            <td>8.01M (69)</td>
+          </tr>
+          <tr>
+            <td>SNACS</td>
+            <td>&#9989;</td>
+            <td>72.60</td>
+            <td>N/A</td>
+            <td>1.98G (52)</td>
+            <td>7.92M (69)</td>
+          </tr>
+          <tr>
+            <td>RGP</td>
+            <td>&#10060;</td>
+            <td>72.68</td>
+            <td>91.06</td>
+            <td>0.94G (77)</td>
+            <td>8.13M (68)</td>
+          </tr>
+          <tr>
+            <td>FPWT</td>
+            <td>&#10060;</td>
+            <td>72.82</td>
+            <td>91.14</td>
+            <td>1.02G (75)</td>
+            <td>6.38M (75)</td>
+          </tr>
+          <tr>
+            <td>SFI-FP</td>
+            <td>&#10060;</td>
+            <td>73.48</td>
+            <td>92.87</td>
+            <td>0.96G (77)</td>
+            <td>8.03M (69)</td>
+          </tr>
+          <tr>
+            <td>ACSC</td>
+            <td>&#9989;</td>
+            <td>73.68</td>
+            <td>N/A</td>
+            <td>1.03G (75)</td>
+            <td>6.31M (75)</td>
+          </tr>
+          <tr>
+            <td>DCFF</td>
+            <td>&#10060;</td>
+            <td>73.81</td>
+            <td>91.59</td>
+            <td>1.02G (75)</td>
+            <td>6.56M (74)</td>
+          </tr>
+          <tr>
+            <td>Guo <em>et al.</em></td>
+            <td>&#9989;</td>
+            <td>73.84</td>
+            <td>92.07</td>
+            <td>1.19G (71)</td>
+            <td>6.25M (75)</td>
+          </tr>
+          <tr>
+            <td><strong>SLIMING (Ours)</strong></td>
+            <td>&#9989;</td>
+            <td><strong>73.88</strong></td>
+            <td><strong>92.07</strong></td>
+            <td><strong>0.87G (79)</strong></td>
+            <td><strong>5.68M (78)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+
   <section class="section" id="downstream">
     <div class="container is-max-desktop">
       <h2 class="title">🚀 Throughput acceleration</h2>

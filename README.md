@@ -30,8 +30,8 @@
 </div>
 
 <div align="center">
-    <sup>1</sup>Université de Toulon, Aix Marseille Université, CNRS, LIS, UMR 7020, France<br>
-    <sup>2</sup>University of Côte d'Azur, CNRS, I3S, UMR 7271, France<br>
+    <sup>1</sup>Université de Toulon, Université d'Aix-Marseille, CNRS, LIS, UMR 7020, France<br>
+    <sup>2</sup>Université Côte d'Azur, CNRS, I3S, UMR 7271, France<br>
     <sup>&#x2709</sup> Corresponding Author
 </div>
 

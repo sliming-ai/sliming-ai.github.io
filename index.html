@@ -252,7 +252,6 @@
   <!-- End paper abstract -->
 
 
-  <!-- Image carousel -->
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title">🎮 Toy example</h2>
@@ -281,86 +280,35 @@
           computational overhead.
         </p>
       </div>
-      <div id="results-carousel" class="carousel results-carousel" style="max-width: 720px; margin: 0 auto;">
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/MSV_original.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            Singular values of the original model.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/RS.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            Random search.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/CHIP.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            <a href="https://arxiv.org/abs/2110.13981">CHIP</a>.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/FPC.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705121010492">FPC</a>.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/SPSRC.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            <a
-              href="https://openaccess.thecvf.com/content/WACV2024/html/Sun_Towards_Better_Structured_Pruning_Saliency_by_Reorganizing_Convolution_WACV_2024_paper.html">SPSRC</a>.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/GEM.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            <b>GEM (Ours).</b>
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/Groundtruth.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            Groundtruth or Complete Search.
-          </h2>
-        </div>
-        <div class="item">
-          <!-- Your image here -->
-          <img src="static/images/Non-redundant.png" alt="MY ALT TEXT" style="max-width: 100%;" />
-          <h2 class="subtitle has-text-centered">
-            Non-redundant selected filters with SVGG.
-          </h2>
-        </div>
-      </div>
+      <figure>
+        <img src="./static/images/svgg.png" alt="fig1" style="width: 100%; height: auto;">
+        <figcaption><b>Figure 1:</b> Distribution of singular values <i>(left)</i>. Non-redundant selected filters
+          <i>(right)</i>.
+        </figcaption>
+      </figure>
+
     </div>
   </section>
-  <!-- End image carousel -->
 
 
   <section class="section" id="results">
     <div class="container is-max-desktop">
       <h2 class="title">🚩 Main results</h2>
-      <p>
-        To showcase SLIMING's adaptability, we evaluate it on five architectures: VGG-16-BN, GoogLeNet with inception
-        modules, ResNet-20/32/56/110 with residual blocks, DenseNet-40 with dense blocks, and MobileNetV2 with inverted
-        residual blocks. These models are tested on the CIFAR-10/100 datasets. To further validate SLIMING's
-        scalability, we perform experiments on the ImageNet dataset using ResNet-50 and MobileNetV2 architectures.
-        Additionally, the compressed ResNet-50 model is used as the backbone for Faster R-CNN-FPN, Mask R-CNN, and
-        Keypoint R-CNN on the COCO-2017 dataset. While detailed results are available in the paper, we present ResNet-50
-        results on ImageNet in Table 1 for clarity. Our method consistently surpasses other approaches across all
-        compression levels in terms of performance and complexity reduction.
-      </p>
+      <div class="content has-text-justified">
+        <p>
+          To showcase SLIMING's adaptability, we evaluate it on five architectures: VGG-16-BN, GoogLeNet with inception
+          modules, ResNet-20/32/56/110 with residual blocks, DenseNet-40 with dense blocks, and MobileNetV2 with
+          inverted residual blocks. These models are tested on the CIFAR-10/100 datasets. To further validate SLIMING's
+          scalability, we perform experiments on the ImageNet dataset using ResNet-50 and MobileNetV2 architectures.
+          Additionally, the compressed ResNet-50 model is used as the backbone for Faster R-CNN-FPN, Mask R-CNN, and
+          Keypoint R-CNN on the COCO-2017 dataset. We compare SLIMING with 56 related works, as detailed in the paper,
+          and present ResNet-50 results on ImageNet in Table 1 for clarity. Our method consistently surpasses other
+          approaches across all compression levels in terms of performance and complexity reduction.
+        </p>
+      </div>
 
       <table class="table is-striped is-fullwidth">
-        <caption>Table 1. Compression results of ResNet-50 on ImageNet</caption>
+        <caption><b>Table 1.</b> Compression results of ResNet-50 on ImageNet</caption>
         <thead>
           <tr>
             <th>Method</th>
@@ -373,7 +321,8 @@
         </thead>
         <tbody>
           <tr>
-            <td><em>ResNet-50</em></td>
+            <td><em>ResNet-50 <a href="https://ieeexplore.ieee.org/document/7780459" target="_blank">(CVPR'16)</a></em>
+            </td>
             <td></td>
             <td>76.15</td>
             <td>92.87</td>
@@ -381,15 +330,7 @@
             <td>25.56M (00)</td>
           </tr>
           <tr>
-            <td>C-SGD</td>
-            <td>&#10060;</td>
-            <td>75.94</td>
-            <td>92.88</td>
-            <td>2.62G (36)</td>
-            <td>17.09M (33)</td>
-          </tr>
-          <tr>
-            <td>REAF</td>
+            <td>REAF <a href="https://ieeexplore.ieee.org/document/10181132" target="_blank">(TIP'23)</a></td>
             <td>&#9989;</td>
             <td>75.17</td>
             <td>92.44</td>
@@ -397,7 +338,7 @@
             <td>14.57M (43)</td>
           </tr>
           <tr>
-            <td>RGP</td>
+            <td>RGP <a href="https://ieeexplore.ieee.org/document/10149178" target="_blank">(TNNLS'24)</a></td>
             <td>&#10060;</td>
             <td>75.30</td>
             <td>92.55</td>
@@ -405,7 +346,8 @@
             <td>14.34M (44)</td>
           </tr>
           <tr>
-            <td>Chen <em>et al.</em></td>
+            <td>Chen <em>et al.</em> <a href="https://ieeexplore.ieee.org/document/10177916"
+                target="_blank">(TNNLS'23)</a></td>
             <td>&#10060;</td>
             <td>75.60</td>
             <td>92.58</td>
@@ -413,7 +355,7 @@
             <td>N/A</td>
           </tr>
           <tr>
-            <td>C-SGD</td>
+            <td>C-SGD <a href="https://ieeexplore.ieee.org/document/10283855" target="_blank">(TNNLS'23)</a></td>
             <td>&#10060;</td>
             <td>75.80</td>
             <td>92.65</td>
@@ -421,7 +363,7 @@
             <td>14.58M (43)</td>
           </tr>
           <tr>
-            <td>CHIP</td>
+            <td>CHIP <a href="https://arxiv.org/abs/2110.13981" target="_blank">(NeurIPS'21)</a></td>
             <td>&#10060;</td>
             <td>76.15</td>
             <td>92.91</td>
@@ -429,7 +371,8 @@
             <td>14.23M (44)</td>
           </tr>
           <tr>
-            <td>SFI-FP</td>
+            <td>SFI-FP <a href="https://www.sciencedirect.com/science/article/pii/S0031320324002395"
+                target="_blank">(Pattern Recognition'24)</a></td>
             <td>&#10060;</td>
             <td>76.29</td>
             <td>93.08</td>
@@ -437,7 +380,8 @@
             <td>14.23M (44)</td>
           </tr>
           <tr>
-            <td>PEEL</td>
+            <td>PEEL <a href="https://www.sciencedirect.com/science/article/pii/S0031320323005848"
+                target="_blank">(Pattern Recognition'24)</a></td>
             <td>&#10060;</td>
             <td>76.50</td>
             <td>N/A</td>
@@ -453,7 +397,8 @@
             <td><strong>13.27M (48)</strong></td>
           </tr>
           <tr>
-            <td>CIE</td>
+            <td>CIE <a href="https://www.sciencedirect.com/science/article/pii/S0893608024004209"
+                target="_blank">(Neural Networks'24)</a></td>
             <td>&#9989;</td>
             <td>74.06</td>
             <td>91.87</td>
@@ -461,7 +406,7 @@
             <td>9.98M (61)</td>
           </tr>
           <tr>
-            <td>RGP</td>
+            <td>RGP <a href="https://ieeexplore.ieee.org/document/10149178" target="_blank">(TNNLS'24)</a></td>
             <td>&#10060;</td>
             <td>74.58</td>
             <td>92.09</td>
@@ -469,7 +414,7 @@
             <td>11.99M (53)</td>
           </tr>
           <tr>
-            <td>MFP</td>
+            <td>MFP <a href="https://ieeexplore.ieee.org/document/9716788" target="_blank">(TNNLS'23)</a></td>
             <td>&#10060;</td>
             <td>74.86</td>
             <td>92.43</td>
@@ -477,7 +422,8 @@
             <td>N/A</td>
           </tr>
           <tr>
-            <td>FPWT</td>
+            <td>FPWT <a href="https://www.sciencedirect.com/science/article/pii/S089360802400501X"
+                target="_blank">(Neural Networks'24)</a></td>
             <td>&#10060;</td>
             <td>75.01</td>
             <td>92.45</td>
@@ -485,7 +431,7 @@
             <td>12.86M (50)</td>
           </tr>
           <tr>
-            <td>Torque</td>
+            <td>Torque <a href="https://ieeexplore.ieee.org/document/10484493" target="_blank">(WACV'24)</a></td>
             <td>&#10060;</td>
             <td>75.07</td>
             <td>N/A</td>
@@ -493,7 +439,7 @@
             <td>9.68M (62)</td>
           </tr>
           <tr>
-            <td>OTOv2</td>
+            <td>OTOv2 <a href="https://arxiv.org/abs/2303.06862" target="_blank">(ICLR'23)</a></td>
             <td>&#9989;</td>
             <td>75.20</td>
             <td>92.22</td>
@@ -501,7 +447,7 @@
             <td>N/A</td>
           </tr>
           <tr>
-            <td>FiltDivNet</td>
+            <td>FiltDivNet <a href="https://ieeexplore.ieee.org/document/9881223" target="_blank">(TNNLS'24)</a></td>
             <td>&#9989;</td>
             <td>75.23</td>
             <td>92.50</td>
@@ -509,7 +455,7 @@
             <td>15.62M (39)</td>
           </tr>
           <tr>
-            <td>ASTER</td>
+            <td>ASTER <a href="https://ieeexplore.ieee.org/document/10064249" target="_blank">(TNNLS'24)</a></td>
             <td>&#9989;</td>
             <td>75.27</td>
             <td>92.47</td>
@@ -517,7 +463,7 @@
             <td>N/A</td>
           </tr>
           <tr>
-            <td>C-SGD</td>
+            <td>C-SGD <a href="https://ieeexplore.ieee.org/document/10283855" target="_blank">(TNNLS'23)</a></td>
             <td>&#10060;</td>
             <td>75.29</td>
             <td>92.39</td>
@@ -525,7 +471,8 @@
             <td>12.37M (52)</td>
           </tr>
           <tr>
-            <td>Hu <em>et al.</em></td>
+            <td>Hu <em>et al.</em> <a href="https://doi.org/10.1016/j.patcog.2024.110546" target="_blank">(Pattern
+                Recognition'24)</a></td>
             <td>&#10060;</td>
             <td>75.30</td>
             <td>92.40</td>
@@ -533,7 +480,7 @@
             <td>17.86M (30)</td>
           </tr>
           <tr>
-            <td>DCFF</td>
+            <td>DCFF <a href="https://ieeexplore.ieee.org/document/10078845" target="_blank">(TPAMI'23)</a></td>
             <td>&#10060;</td>
             <td>75.60</td>
             <td>92.55</td>
@@ -541,7 +488,7 @@
             <td>11.05M (57)</td>
           </tr>
           <tr>
-            <td>HTP-URC</td>
+            <td>HTP-URC <a href="https://ieeexplore.ieee.org/document/10103912" target="_blank">(TNNLS'24)</a></td>
             <td>&#9989;</td>
             <td>75.81</td>
             <td>N/A</td>
@@ -557,7 +504,8 @@
             <td><strong>9.68M (62)</strong></td>
           </tr>
           <tr>
-            <td>HBFP</td>
+            <td>HBFP <a href="https://www.sciencedirect.com/science/article/pii/S0925231224000286"
+                target="_blank">(Neurocomputing'24)</a></td>
             <td>&#10060;</td>
             <td>69.17</td>
             <td>N/A</td>
@@ -565,7 +513,7 @@
             <td>8.09M (68)</td>
           </tr>
           <tr>
-            <td>CHIP</td>
+            <td>CHIP <a href="https://arxiv.org/abs/2110.13981" target="_blank">(NeurIPS'21)</a></td>
             <td>&#10060;</td>
             <td>72.30</td>
             <td>90.74</td>
@@ -573,7 +521,7 @@
             <td>8.01M (69)</td>
           </tr>
           <tr>
-            <td>SNACS</td>
+            <td>SNACS <a href="https://ieeexplore.ieee.org/document/9866022" target="_blank">(TNNLS'24)</a></td>
             <td>&#9989;</td>
             <td>72.60</td>
             <td>N/A</td>
@@ -581,7 +529,7 @@
             <td>7.92M (69)</td>
           </tr>
           <tr>
-            <td>RGP</td>
+            <td>RGP <a href="https://ieeexplore.ieee.org/document/10149178" target="_blank">(TNNLS'24)</a></td>
             <td>&#10060;</td>
             <td>72.68</td>
             <td>91.06</td>
@@ -589,7 +537,8 @@
             <td>8.13M (68)</td>
           </tr>
           <tr>
-            <td>FPWT</td>
+            <td>FPWT <a href="https://www.sciencedirect.com/science/article/pii/S089360802400501X"
+                target="_blank">(Neural Networks'24)</a></td>
             <td>&#10060;</td>
             <td>72.82</td>
             <td>91.14</td>
@@ -597,7 +546,8 @@
             <td>6.38M (75)</td>
           </tr>
           <tr>
-            <td>SFI-FP</td>
+            <td>SFI-FP <a href="https://www.sciencedirect.com/science/article/pii/S0031320324002395"
+                target="_blank">(Pattern Recognition'24)</a></td>
             <td>&#10060;</td>
             <td>73.48</td>
             <td>92.87</td>
@@ -605,7 +555,8 @@
             <td>8.03M (69)</td>
           </tr>
           <tr>
-            <td>ACSC</td>
+            <td>ACSC <a href="https://www.sciencedirect.com/science/article/pii/S0925231224004697"
+                target="_blank">(Neurocomputing'24)</a></td>
             <td>&#9989;</td>
             <td>73.68</td>
             <td>N/A</td>
@@ -613,7 +564,7 @@
             <td>6.31M (75)</td>
           </tr>
           <tr>
-            <td>DCFF</td>
+            <td>DCFF <a href="https://ieeexplore.ieee.org/document/10078845" target="_blank">(TPAMI'23)</a></td>
             <td>&#10060;</td>
             <td>73.81</td>
             <td>91.59</td>
@@ -621,7 +572,8 @@
             <td>6.56M (74)</td>
           </tr>
           <tr>
-            <td>Guo <em>et al.</em></td>
+            <td>Guo <em>et al.</em> <a href="https://link.springer.com/article/10.1007/s11263-023-01972-x"
+                target="_blank">(IJCV'24)</a></td>
             <td>&#9989;</td>
             <td>73.84</td>
             <td>92.07</td>
@@ -674,7 +626,7 @@
         </tbody>
       </table>
       <div class="has-text-centered">
-        <p>Baseline (<em>left</em>) vs Pruned (<em>right</em>) model inference.</p>
+        <p><b>Figure 2:</b> Baseline (<em>left</em>) vs Pruned (<em>right</em>) model inference.</p>
       </div>
     </div>
   </section>
@@ -749,7 +701,7 @@
         </tbody>
       </table>
       <div class="has-text-centered">
-        <p>Qualitative assessment of feature preservation in compressed models.</p>
+        <p><b>Figure 3:</b> Qualitative assessment of feature preservation in compressed models.</p>
       </div>
     </div>
   </section>
@@ -797,6 +749,10 @@
         work of T.P. Nguyen is partially supported by <a href="https://anr.fr/Projet-ANR-21-ASRO-0003">ANR ASTRID
           ROV-Chasseur</a>.
       </p>
+      <figure>
+        <img src="./static/images/JeanZay.jpg" alt="jean-zay" style="width: 100%; height: auto;">
+        <img src="./static/images/Nouveau_logo_ANR_2022.jpg" alt="jean-zay" style="width: 100%; height: auto;">
+      </figure>
     </div>
   </section>
   <!--End Acknowledgements-->

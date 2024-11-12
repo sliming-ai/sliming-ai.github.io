@@ -294,16 +294,18 @@
   <section class="section" id="results">
     <div class="container is-max-desktop">
       <h2 class="title">🚩 Main results</h2>
-      <p>
-        To showcase SLIMING's adaptability, we evaluate it on five architectures: VGG-16-BN, GoogLeNet with inception
-        modules, ResNet-20/32/56/110 with residual blocks, DenseNet-40 with dense blocks, and MobileNetV2 with inverted
-        residual blocks. These models are tested on the CIFAR-10/100 datasets. To further validate SLIMING's
-        scalability, we perform experiments on the ImageNet dataset using ResNet-50 and MobileNetV2 architectures.
-        Additionally, the compressed ResNet-50 model is used as the backbone for Faster R-CNN-FPN, Mask R-CNN, and
-        Keypoint R-CNN on the COCO-2017 dataset. While detailed results are available in the paper, we present ResNet-50
-        results on ImageNet in Table 1 for clarity. Our method consistently surpasses other approaches across all
-        compression levels in terms of performance and complexity reduction.
-      </p>
+      <div class="content has-text-justified">
+        <p>
+          To showcase SLIMING's adaptability, we evaluate it on five architectures: VGG-16-BN, GoogLeNet with inception
+          modules, ResNet-20/32/56/110 with residual blocks, DenseNet-40 with dense blocks, and MobileNetV2 with
+          inverted residual blocks. These models are tested on the CIFAR-10/100 datasets. To further validate SLIMING's
+          scalability, we perform experiments on the ImageNet dataset using ResNet-50 and MobileNetV2 architectures.
+          Additionally, the compressed ResNet-50 model is used as the backbone for Faster R-CNN-FPN, Mask R-CNN, and
+          Keypoint R-CNN on the COCO-2017 dataset. We compare SLIMING with 56 related works, as detailed in the paper,
+          and present ResNet-50 results on ImageNet in Table 1 for clarity. Our method consistently surpasses other
+          approaches across all compression levels in terms of performance and complexity reduction.
+        </p>
+      </div>
 
       <table class="table is-striped is-fullwidth">
         <caption><b>Table 1.</b> Compression results of ResNet-50 on ImageNet</caption>

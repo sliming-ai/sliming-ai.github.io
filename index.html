@@ -156,14 +156,14 @@
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- Arxiv PDF link -->
+                <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/sliming-ai/sliming-ai.github.io" target="_blank"
+                  <a href="https://www.youtube.com/watch?v=P0jVSO9LjPg"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                      <i class="fab fa-youtube"></i>
                     </span>
-                    <span>Paper</span>
+                    <span>Video</span>
                   </a>
                 </span>
 
@@ -183,6 +183,17 @@
                   <a href="https://huggingface.co/sliming/models" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span>🤗 Models</span>
+                  </a>
+                </span>
+
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://github.com/sliming-ai/sliming-ai.github.io" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
                   </a>
                 </span>
 
@@ -230,23 +241,33 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              In this paper, we present SLIMING (Singular vaLues-drIven autoMated filter
-              prunING), an automated filter pruning method that uses singular values to formalize
-              the pruning process as an optimization problem over filter tensors. Recognizing that
-              this original formulation poses a combinatorial challenge, we propose to replace it
-              with a two-step process that consistently uses singular values in each phase: (\(i\))
-              determining the pruning configuration, which specifies the number of filters to retain
-              in each layer, and (\(ii\)) selecting the filters themselves. We show that this approach
-              ensures the preservation of the filters' multidimensional structure throughout the
-              pruning process. For each of these steps, we propose a straightforward algorithm to
-              solve them. To validate each part of our approach, we performed a numerical
-              simulation on an overparameterized synthetic toy example. Additionally, we
-              conducted extensive simulations across eight architectures, four benchmark
-              datasets, and four vision tasks, validating the efficacy of our framework.
+              We present SLIMING (Singular vaLues-drIven autoMated filter prunING), an automated filter pruning method
+              that uses singular values to formalize the pruning process as an optimization problem over filter tensors.
+              Recognizing that this original formulation poses a combinatorial challenge, we propose to replace it with
+              a two-step process that consistently uses singular values in each phase: (\(i\)) determining the pruning
+              configuration, which specifies the number of filters to retain in each layer, and (\(ii\)) selecting the
+              filters themselves. We show that this approach ensures the preservation of the filters' multidimensional
+              structure throughout the pruning process. For each of these steps, we propose a straightforward algorithm
+              to solve them. To validate each part of our approach, we performed a numerical simulation on an
+              overparameterized synthetic toy example. Additionally, we conducted extensive simulations across eight
+              architectures, four benchmark datasets, and four vision tasks, validating the efficacy of our framework.
             </p>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Presentation Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/P0jVSO9LjPg?rel=0&amp;showinfo=0" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
     </div>
   </section>
   <!-- End paper abstract -->

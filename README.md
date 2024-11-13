@@ -50,7 +50,8 @@ across 8 architectures, 4 benchmark datasets, and 4 vision tasks underscore the 
 
 
 # 🌟 News
-* **1.11.024:** [Baseline and checkpoints are released](https://huggingface.co/sliming/models) 🤗. Get your 👋 dirty 💻!
+* **13.11.024:** 🎬 Lights, Camera, Action! 🔥[Presentation Video Out Now!](https://www.youtube.com/watch?v=P0jVSO9LjPg) 🍿 Kick back and enjoy!
+* **1.11.2024:** [Baseline and checkpoints are released](https://huggingface.co/sliming/models) 🤗. Get your 👋 dirty 💻!
 * **31.10.024:** The manuscript has been submitted to [Neural Networks](https://www.sciencedirect.com/journal/neural-networks).
 
 # :art: Supplementary materials

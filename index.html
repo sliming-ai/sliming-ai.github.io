@@ -237,7 +237,11 @@
     <div class="container is-max-desktop content">
       <h2 class="title is-3">🔥 News</h2>
       <ul>
-        <li><strong>13.11.024:</strong> 🎬 Lights, Camera, Action! <a
+        <li><strong>01.01.2025:</strong> We compare SLIMNG with <a
+            href="https://ieeexplore.ieee.org/document/10819307">HSC (TPAMI'25)</a>, see Table 2. More comparisons 📊
+          with SOTAs to come 💪!
+        </li>
+        <li><strong>13.11.2024:</strong> 🎬 Lights, Camera, Action! <a
             href="https://www.youtube.com/watch?v=P0jVSO9LjPg"> Presentation Video Out Now!</a> 🍿 Kick back and enjoy!
         </li>
         <li><strong>1.11.2024:</strong> <a href="https://huggingface.co/sliming/models">Baseline and checkpoints are
@@ -496,6 +500,14 @@
             <td>17.86M (30)</td>
           </tr>
           <tr>
+            <td>HSC</em> <a href="https://ieeexplore.ieee.org/document/10819307" target="_blank">(TPAMI'25)</a></td>
+            <td>&#10060;</td>
+            <td>75.46</td>
+            <td>92.40</td>
+            <td>1.57G (62)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
             <td>DCFF <a href="https://ieeexplore.ieee.org/document/10078845" target="_blank">(TPAMI'23)</a></td>
             <td>&#10060;</td>
             <td>75.60</td>
@@ -603,6 +615,57 @@
             <td><strong>92.07</strong></td>
             <td><strong>0.87G (79)</strong></td>
             <td><strong>5.68M (78)</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table is-striped is-fullwidth">
+        <caption><b>Table 2.</b> Compression results of ResNet-110 on CIFAR-10</caption>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Auto</th>
+            <th>Top-1</th>
+            <th>MACs (↓%)</th>
+            <th>Params (↓%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><em>ResNet-110 <a href="https://ieeexplore.ieee.org/document/7780459" target="_blank">(CVPR'16)</a></em>
+            </td>
+            <td></td>
+            <td>93.50</td>
+            <td>256.04M (00)</td>
+            <td>1.73M (00)</td>
+          </tr>
+          <tr>
+            <td>HSC</em> <a href="https://ieeexplore.ieee.org/document/10819307" target="_blank">(TPAMI'25)</a></td>
+            <td>&#10060;</td>
+            <td>94.01</td>
+            <td>88.26M (65)</td>
+            <td>0.69M (60)</td>
+          </tr>
+          <tr>
+            <td><strong>SLIMING (Ours)</strong></td>
+            <td>&#9989;</td>
+            <td><strong>94.52</strong></td>
+            <td><strong>87.59M (66)</strong></td>
+            <td><strong>0.61M (65)</strong></td>
+          </tr>
+          <tr>
+            <td>HSC</em> <a href="https://ieeexplore.ieee.org/document/10819307" target="_blank">(TPAMI'25)</a></td>
+            <td>&#10060;</td>
+            <td>93.56</td>
+            <td>71.31M (72)</td>
+            <td>0.51M (70)</td>
+          </tr>
+          <tr>
+            <td><strong>SLIMING (Ours)</strong></td>
+            <td>&#9989;</td>
+            <td><strong>93.64</strong></td>
+            <td><strong>54.50M (79)</strong></td>
+            <td><strong>0.28M (84)</strong></td>
           </tr>
         </tbody>
       </table>

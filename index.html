@@ -237,9 +237,10 @@
     <div class="container is-max-desktop content">
       <h2 class="title is-3">🔥 News</h2>
       <ul>
-        <li><strong>01.01.2025:</strong> We compare SLIMNG with <a
-            href="https://ieeexplore.ieee.org/document/10819307">HSC (TPAMI'25)</a>, see Table 2. More comparisons 📊
-          with SOTAs to come 💪!
+        <li><strong>01.01.2025:</strong> We compare SLIMING with
+          <a href="https://ieeexplore.ieee.org/document/10819307" target="_blank">HSC (TPAMI'25)</a>. Check out <a
+            href="#table2">Table 2</a>!
+          Stay tuned for more 📊 comparisons with SOTAs coming soon 💪!
         </li>
         <li><strong>13.11.2024:</strong> 🎬 Lights, Camera, Action! <a
             href="https://www.youtube.com/watch?v=P0jVSO9LjPg"> Presentation Video Out Now!</a> 🍿 Kick back and enjoy!
@@ -322,12 +323,14 @@
           scalability, we perform experiments on the ImageNet dataset using ResNet-50 and MobileNetV2 architectures.
           Additionally, the compressed ResNet-50 model is used as the backbone for Faster R-CNN-FPN, Mask R-CNN, and
           Keypoint R-CNN on the COCO-2017 dataset. We compare SLIMING with 56 related works, as detailed in the paper,
-          and present ResNet-50 results on ImageNet in Table 1 for clarity. Our method consistently surpasses other
-          approaches across all compression levels in terms of performance and complexity reduction.
+          and present ResNet-50 results on ImageNet in <a href="#table1">Table 1</a> for clarity. Furthermore, the
+          compression results of ResNet-110 on CIFAR-10 are summarized in <a href="#table2">Table 2</a>. Our method
+          consistently surpasses other approaches across all compression levels in terms of performance and complexity
+          reduction.
         </p>
       </div>
 
-      <table class="table is-striped is-fullwidth">
+      <table id="table1" class="table is-striped is-fullwidth">
         <caption><b>Table 1.</b> Compression results of ResNet-50 on ImageNet</caption>
         <thead>
           <tr>
@@ -619,7 +622,7 @@
         </tbody>
       </table>
 
-      <table class="table is-striped is-fullwidth">
+      <table id="table2" class="table is-striped is-fullwidth">
         <caption><b>Table 2.</b> Compression results of ResNet-110 on CIFAR-10</caption>
         <thead>
           <tr>

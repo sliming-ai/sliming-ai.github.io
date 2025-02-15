@@ -24,7 +24,7 @@
     </h1>
 </div>
 <div align="center">
-    <a href='https://github.com/pvti' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
+    <a href='https://pageperso.lis-lab.fr/van-tien.pham/' target='_blank'>Van Tien PHAM<sup>1,&#x2709</sup></a>&emsp;
     <a href='https://yzniyed.blogspot.com/p/about-me.html' target='_blank'>Yassine ZNIYED<sup>1</sup></a>&emsp;
     <a href='https://webusers.i3s.unice.fr/~tpnguyen/' target='_blank'>Thanh Phuong NGUYEN<sup>2</sup></a>&emsp;
 </div>

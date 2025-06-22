@@ -15,7 +15,7 @@
 
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fpvtien96%2FSLIMMING&labelColor=%2337d67a&countColor=%23697689)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![Days since submission](https://img.shields.io/badge/Days_since_submission-234-a50026?style=flat-square)
+![Days since submission](https://img.shields.io/badge/Days_since_submission-235-a50026?style=flat-square)
 
 <div class="column centered">
     <h1 class="title is-1 publication-title"

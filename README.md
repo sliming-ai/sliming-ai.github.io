@@ -128,12 +128,13 @@ The visual representation underscores SLIMING's efficacy in retaining crucial fe
 # 🔖 Citation
 If the code and paper help your research, please kindly cite:
 ```
-@misc{pham2024singular,
-    title={Singular values-driven automated filter pruning}, 
-    author={Pham, Van Tien and Zniyed, Yassine and Nguyen, Thanh Phuong},
-    howpublished={\url{https://sliming-ai.github.io/}},
-    year={2024}
-    }
+@article{pham2025singular,
+          title={Singular Values-Driven Automated Filter Pruning},
+          author={Pham, Van Tien and Zniyed, Yassine and Nguyen, Thanh Phuong},
+          journal={Neural Networks},
+          year={2025},
+          publisher={Elsevier}
+        }
 ```
 
 
